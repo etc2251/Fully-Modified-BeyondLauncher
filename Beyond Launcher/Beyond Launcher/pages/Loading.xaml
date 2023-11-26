@@ -1,0 +1,21 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Beyond_Launcher.pages"
+       xmlns:ui2="http://schemas.modernwpf.com/2019"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml" x:Class="Beyond_Launcher.pages.Loading"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Loading" Initialized="Page_Initialized">
+
+    <Grid>
+        <ui2:ProgressBar IsIndeterminate="True"  Height="34" Width="348" HorizontalAlignment="Center"/>
+        <Label Content="Launching 9.10" HorizontalAlignment="Left" Margin="296,120,0,0" VerticalAlignment="Top" Height="46" Width="192" Foreground="#FFD0D0D0" FontSize="30" FontFamily="Segoe UI Variable Display"/>
+        <Label Content="This might take a while." HorizontalAlignment="Left" Margin="240,360,0,0" VerticalAlignment="Top" Height="46" Width="304" Foreground="#FFD0D0D0" FontSize="30" FontFamily="Segoe UI Variable Display"/>
+        <ui:Button Content="Cancel" Margin="296,286,0,0" VerticalAlignment="Top" Width="192" Height="40" Click="Button_Click"/>
+
+
+    </Grid>
+</Page>
